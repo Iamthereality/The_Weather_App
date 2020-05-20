@@ -1,0 +1,39 @@
+.weather-details {
+    margin-top: 50px;
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 20px;
+
+    .detail {
+
+        span {
+            font-size: 18px;
+            color: lighten(#4a8beb, 10%);
+        }
+
+        p {
+            font-size: 22px;
+            font-weight: 300;
+            color: lighten(#4a8beb, 30%);
+
+            span {
+                color: white;
+                font-weight: 500;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 425px) {
+        margin-top: 30px;
+        grid-gap: 20px;
+    }
+}
